@@ -20,8 +20,13 @@ import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
 import com.ulabs.minhasfinancas.model.enums.StatusLancamento;
 import com.ulabs.minhasfinancas.model.enums.TipoLancamento;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
 @Entity
 @Table(name = "lancamento", schema="financas")
+@NoArgsConstructor
+@AllArgsConstructor
 public class Lancamento {
 	
 	@Id
@@ -205,4 +210,8 @@ public class Lancamento {
 				+ status + "]";
 	}
 
+
+
+	
+	
 }
